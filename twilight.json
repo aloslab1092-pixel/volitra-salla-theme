@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "theme_name": "VOLITRA Twilight",
+  "repo_url": "https://github.com/aloslab1092-pixel/volitra-salla-theme",
+  "support_url": "https://salla.dev",
+  "settings": [
+    {
+      "type": "boolean",
+      "label": "تفعيل شريط المنتجات المتحرك",
+      "id": "volitra_slider_enabled",
+      "format": "switch",
+      "selected": true
+    },
+    {
+      "type": "string",
+      "label": "عنوان الشريط",
+      "id": "volitra_slider_title",
+      "value": "إلكترونيات ذكية.. لحياة أسهل"
+    },
+    {
+      "type": "string",
+      "id": "volitra_logo",
+      "format": "image",
+      "value": ""
+    }
+  ],
+  "features": [
+    "component-featured-products",
+    "component-fixed-banner",
+    "component-fixed-products",
+    "component-photos-slider",
+    "component-products-slider",
+    "component-store-features",
+    "filters"
+  ]
+}
