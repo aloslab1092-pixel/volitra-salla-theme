@@ -1,0 +1,81 @@
+{
+  "version": "1.0.0",
+  "theme_name": "VOLITRA Twilight",
+  "repo_url": "https://github.com/aloslab1092-pixel/volitra-salla-theme",
+  "support_url": "https://salla.dev",
+  "settings": [
+    {
+      "type": "boolean",
+      "label": "تفعيل شريط المنتجات المتحرك",
+      "id": "volitra_slider_enabled",
+      "format": "switch",
+      "selected": true
+    },
+    {
+      "type": "string",
+      "label": "عنوان الشريط",
+      "id": "volitra_slider_title",
+      "value": "إلكترونيات ذكية.. لحياة أسهل"
+    },
+    {
+      "type": "string",
+      "id": "volitra_logo",
+      "format": "image",
+      "value": ""
+    }
+  ],
+  "features": [
+    "component-featured-products",
+    "component-fixed-banner",
+    "component-fixed-products",
+    "component-photos-slider",
+    "component-products-slider",
+    "component-store-features",
+    "filters"
+  ],
+  "components": [
+    {
+      "name": "volitra-electronics-slider",
+      "title": "VOLITRA — شريط الإلكترونيات المتحرك",
+      "icon": "sicon-image-carousel",
+      "path": "home.volitra-electronics-slider",
+      "fields": [
+        {
+          "id": "title",
+          "type": "string",
+          "label": "العنوان"
+        },
+        {
+          "id": "images",
+          "type": "collection",
+          "format": "collection",
+          "required": true,
+          "minLength": 1,
+          "maxLength": 12,
+          "fields": [
+            {
+              "id": "image",
+              "type": "string",
+              "format": "image",
+              "label": "الصورة",
+              "required": true
+            },
+            {
+              "id": "title",
+              "type": "string",
+              "label": "اسم المنتج"
+            },
+            {
+              "id": "url",
+              "type": "string",
+              "label": "الرابط",
+              "format": "url",
+              "inputType": "url",
+              "required": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
