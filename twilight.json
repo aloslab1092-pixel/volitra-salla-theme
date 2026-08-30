@@ -1,0 +1,89 @@
+{
+  "name": {
+    "ar": "فولتيرا",
+    "en": "VOLITRA Twilight"
+  },
+  "repository": "https://github.com/aloslab1092-pixel/volitra-salla-theme",
+  "features": [
+    "component-featured-products",
+    "component-fixed-banner",
+    "component-fixed-products",
+    "component-photos-slider",
+    "component-products-slider",
+    "component-store-features",
+    "filters"
+  ],
+  "settings": [
+    {
+      "type": "boolean",
+      "label": "تفعيل شريط المنتجات المتحرك",
+      "id": "volitra_slider_enabled",
+      "format": "switch",
+      "required": false,
+      "value": true,
+      "selected": true
+    },
+    {
+      "type": "string",
+      "label": "عنوان الشريط",
+      "id": "volitra_slider_title",
+      "format": "text",
+      "required": false,
+      "value": "إلكترونيات ذكية.. لحياة أسهل"
+    }
+  ],
+  "components": [
+    {
+      "key": "8eb98519-584b-4e5d-a130-d6483462f395",
+      "title": {
+        "en": "VOLITRA Electronics Slider",
+        "ar": "شريط إلكترونيات VOLITRA"
+      },
+      "icon": "sicon-image-carousel",
+      "path": "home.volitra-electronics-slider",
+      "is_default": true,
+      "fields": [
+        {
+          "id": "title",
+          "type": "string",
+          "label": "العنوان",
+          "value": "إلكترونيات ذكية.. لحياة أسهل",
+          "required": false,
+          "format": "text"
+        },
+        {
+          "id": "images",
+          "type": "collection",
+          "format": "collection",
+          "required": false,
+          "minLength": 1,
+          "maxLength": 12,
+          "item_label": "منتج",
+          "fields": [
+            {
+              "id": "image",
+              "type": "string",
+              "format": "image",
+              "label": "الصورة",
+              "required": false
+            },
+            {
+              "id": "title",
+              "type": "string",
+              "label": "اسم المنتج",
+              "required": false
+            },
+            {
+              "id": "url",
+              "type": "string",
+              "label": "الرابط",
+              "format": "url",
+              "inputType": "url",
+              "required": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
